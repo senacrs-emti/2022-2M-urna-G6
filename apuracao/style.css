@@ -1,0 +1,34 @@
+header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+header div h1{
+    
+}
+
+header img{
+    max-width: 5rem;
+}
+
+
+/*main*/
+
+main{
+    padding-top: 5rem;
+}
+
+main div h2{
+    padding-bottom: 2rem;
+}
+
+#machamp{
+    max-width: 10rem;
+}
+
+.pokemon-card {
+    display: flex;
+    align-items:baseline;
+}
