@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header div h2:nth-child(1){
+    margin-right:15px;
+}
+header .logo img{
+    max-width: 100px;
+}
