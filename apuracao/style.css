@@ -32,3 +32,10 @@ main div h2{
     display: flex;
     align-items:baseline;
 }
+.pokemon-card h3, p{
+    margin-bottom: 0;
+}
+
+#lista-candidatos{
+    padding-bottom: 5rem;
+}
