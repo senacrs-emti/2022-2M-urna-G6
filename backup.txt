@@ -1,0 +1,24 @@
+    <div class="numpad">
+      <div id="container">
+        <div>
+          <button id="btn1" onclick="input(this)">1</button>
+          <button id="btn2" onclick="input(this)">2</button>
+          <button id="btn3" onclick="input(this)">3</button>
+        </div>
+        <div>
+          <button id="btn4" onclick="input(this)">4</button>
+          <button id="btn5" onclick="input(this)">5</button>
+          <button id="btn6" onclick="input(this)">6</button>
+        </div>
+        <div>
+          <button id="btn7" onclick="input(this)">7</button>
+          <button id="btn8" onclick="input(this)">8</button>
+          <button id="btn9" onclick="input(this)">9</button>
+        </div>
+        <div>
+          <button id="btnwhitw" onclick="input(this)">?</button>
+          <button id="btndel" value="backspace" onclick="input(this)">X</button>
+          <button id="btnconf" onclick="input(this)">0</button>
+        </div>
+      </div>
+    </div>
