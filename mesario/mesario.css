@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#base {
+    display: flex;
+    justify-content: center;
+}
+
+#caixa1 {
+    width: 762px;
+    height: 585px;
+    border: solid;
+}
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tela {
+    width: 80%;
+    height: 120px;
+    background-color: red;
+    margin-left: 10%;
+}
+
+#caixa2 {
+    width: 600px;
+    height: 20vh;
+    background-color: rgb(197, 255, 127);
+}
+
+#caixa-teclado {
+    border: 1px solid;
+    width: 60%;
+}
+
+#teclado-numerico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    width: 40%;
+    font-size: 2rem;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 90px;
+
+}
+
+.botao-numerico {
+    border: 1px solid;
+    width: 85px;
+    margin: 2px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-digito {
+    text-align: center;
+    border: 1px solid;
+    width: 100px;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
