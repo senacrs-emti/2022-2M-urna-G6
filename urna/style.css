@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#in {
+    background-color: transparent;
+    border:none;
+    user-select: none;
+}
+
+.urna {
+    background-color: gray;
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+}
+.urna .tela{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+.urna .teclado .tecladoNums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:20px;
+}
+.urna .teclado .tecladoNums button,
+.urna .teclado .tecladoFuncs button {
+    padding:20px 20px 20px 20px;
+    background-color: #252525;
+    color:gray;
+    border:1px solid black;
+    text-align: start;
+    cursor: pointer;
+}
+
+.urna .teclado .tecladoFuncs button:nth-child(1){
+    background-color: white;
+    color:black;
+}
+.urna .teclado .tecladoFuncs button:nth-child(2){
+    background-color: orange;
+    color:black;
+}
+.urna .teclado .tecladoFuncs button:nth-child(3) {
+    background-color: green;
+    color:black;
+}
+
+.urna .teclado .tecladoNums button:hover{
+    background-color: #212121;
+}
+.telaVoto {
+    padding:20px;
+}
+
+.inputNum::-webkit-outer-spin-button,
+.inputNum::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputNum {
+    max-width: 10px;
+    padding:10px;
+}
