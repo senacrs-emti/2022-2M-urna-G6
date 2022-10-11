@@ -16,6 +16,12 @@ header img{
 
 /*main*/
 
+main #botoes{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 main .lista-candidatos{
     display: flex;
     align-items: center;
