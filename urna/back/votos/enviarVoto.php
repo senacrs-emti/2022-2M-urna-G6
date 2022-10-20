@@ -14,6 +14,4 @@ function enviarVoto($candidato) {
 
     echo 'votou';
 
-    header('Location: ../../index.php');
-
 }

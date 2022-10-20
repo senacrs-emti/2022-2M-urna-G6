@@ -19,13 +19,16 @@ foreach($votosArray as $key => $value) {
     $votoObj->$key = $value;
 }
 
+
 require '../banco/DB.php';
 
 require './identificarCandidato.php';
 require './enviarVoto.php';
 $candidatoPresidente = identificar($votoPresidente);
-var_dump($candidatoPresidente);
-echo '<br>';
 enviarVoto($candidatoPresidente->id);
+
+session_start();
+$_SESSION['VotouMsg'] = 'VOTOU';
+header('Location: ../../index.php');
 
 

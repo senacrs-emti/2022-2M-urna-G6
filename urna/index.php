@@ -1,10 +1,13 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urna</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +20,14 @@
                 <input type="number" name="votoGovernador" id="votoGovernador">
                 <input type="number" name="votoPresidente" id="votoPresidente">
                 <input type="submit" value="Votar">
+
+                <?php
+                    if(isset($_SESSION['VotouMsg'])) {
+                        echo $_SESSION['VotouMsg'];
+
+                        session_destroy();
+                    }
+                ?>
             </form>
         </div>
         <div class="teclado">
