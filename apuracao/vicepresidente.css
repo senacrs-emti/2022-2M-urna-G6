@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header{
+    margin-bottom:50px;
+}
+
+header img{
+    max-width: 5rem;
+}
+
+
+/*main*/
+
+main #botoes{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main .lista-candidatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .lista-candidatos ul{
+    width:600px;
+}
+
+main h2{
+    text-align: center;
+    margin:20px 0 20px 0;
+}
+
+#machamp{
+    max-width: 10em;
+}
+
+.pokemon-card {
+    display: flex;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* footer */
+
+footer {
+    position:absolute;
+    bottom:1;
+    width:100%;
+    margin-top:60px;
+}
