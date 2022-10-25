@@ -1,0 +1,4 @@
+apagar cargos.csv após estudo
+apagar test.php após estudo
+
+----------

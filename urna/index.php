@@ -13,7 +13,7 @@
 <body>
     <div class="urna">
         <div class="tela" id="tela">
-            <form action="back/votos/voto.php" method="POST">
+            <form action="app/votos/index.php" method="POST">
                 <input type="number" name="votoDepuFederal" id="votoDepuFederal">
                 <input type="number" name="votoDepuEstadual" id="votoDepuEstadual">
                 <input type="number" name="votoSenador" id="votoSenador">
