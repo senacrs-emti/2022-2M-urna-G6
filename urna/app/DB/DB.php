@@ -4,16 +4,17 @@ class DB
 {
     public static function connect()
     {
-        try{
+        try {
             $host = 'localhost';
-            $user = 'root';
-            $pass = '';
+            $username = 'root';
+            $password = '';
             $dbName = 'urna';
 
-            $conn = new PDO("mysql:host=$host;dbname=$dbName", $user, $pass);
+            $conn = new PDO("mysql:host=$host;dbname=$dbName", $username, $password);
             return $conn;
+            
         }catch(Exception $e) {
-            echo 'Erro ao conectar ao banco de dados -> ' . $e->getMessage();
+            echo 'Erro ao se conectar ao banco de dados -> ' . $e->getMessage();
         }
     }
 }
