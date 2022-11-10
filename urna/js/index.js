@@ -1,17 +1,6 @@
-import candidatos from "./candidatos.js"
-
 const tela = document.getElementById("tela")
 const btnConfirmar = document.getElementById("btnConfirmar")
-
-
-let tamanho = candidatos.length + 1;
-for(let i = 0; i<tamanho; i++){
-    
-    candidatos.forEach( (candidato) => {
-        console.log(candidato.PRESIDENCIA[i].NUMERO == '10' ? candidato.PRESIDENCIA[i].NOME : '')
-    })
-
-}
+const btns = document.querySelectorAll(".btn")
 
 
 let etapa = 0
@@ -25,6 +14,8 @@ function atualizarTela() {
     switch (etapa) {
         case 0:
             tela.innerHTML = 'DEPUTADO FEDERAL'
+            tela.innerHTML += '<input type="text" id="inputVoto">'
+            actions()
         break;
         case 1:
             tela.innerHTML = 'DEPUTADO ESTADUAL'
@@ -46,6 +37,15 @@ function atualizarTela() {
             setTimeout(inicio, 3000)
             break;
     }
+}
+
+function actions() {
+    let inputVotos = document.getElementById("inputVoto")
+    btns.forEach(button => {
+    button.addEventListener("click", () => {
+        inputVotos.value += button.value
+    })
+})
 }
 
 btnConfirmar.addEventListener('click', () => {

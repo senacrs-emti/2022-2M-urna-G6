@@ -9,22 +9,20 @@
 </head>
 <body>
     <div class="urna">
-        <div class="tela" id="tela">
-            
-        </div>
+        <div class="tela" id="tela"></div>
         <div class="teclado">
             <div class="numeros">
-                <button class="btnNum" value="1">1</button>
-                <button class="btnNum" value="2">2</button>
-                <button class="btnNum" value="3">3</button>
-                <button class="btnNum" value="4">4</button>
-                <button class="btnNum" value="5">5</button>
-                <button class="btnNum" value="6">6</button>
-                <button class="btnNum" value="7">7</button>
-                <button class="btnNum" value="8">8</button>
-                <button class="btnNum" value="9">9</button>
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
                 <button class="inv"></button>
-                <button class="btnNum" value="0">0</button>
+                <button class="btn" value="0">0</button>
                 <button class="inv"></button>
             </div>
             <div class="acoes">
@@ -35,7 +33,7 @@
         </div>
     </div>
 
-    <script src="js/main.js" type="module"></script>
-    <script src="js/btns.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/btns.js"></script> -->
 </body>
 </html>
